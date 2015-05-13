@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @loan.customer %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @loan.status %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @loan.amount %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @loan.currency %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @loan.notes %>
+</p>
+
+<p>
+  <strong>Tax rate:</strong>
+  <%= @loan.tax_rate %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @loan.start_date %>
+</p>
+
+<p>
+  <strong>Estimated end date:</strong>
+  <%= @loan.estimated_end_date %>
+</p>
+
+<p>
+  <strong>Monthly amout:</strong>
+  <%= @loan.monthly_amout %>
+</p>
+
+<p>
+  <strong>Quotas:</strong>
+  <%= @loan.quotas %>
+</p>
+
+<p>
+  <strong>Quota amount:</strong>
+  <%= @loan.quota_amount %>
+</p>
+
+<p>
+  <strong>Quotas payed:</strong>
+  <%= @loan.quotas_payed %>
+</p>
+
+<p>
+  <strong>Quotas delayed:</strong>
+  <%= @loan.quotas_delayed %>
+</p>
+
+<p>
+  <strong>Payed amount:</strong>
+  <%= @loan.payed_amount %>
+</p>
+
+<p>
+  <strong>Total earnings:</strong>
+  <%= @loan.total_earnings %>
+</p>
+
+<p>
+  <strong>Earning per quota:</strong>
+  <%= @loan.earning_per_quota %>
+</p>
+
+<%= link_to 'Edit', edit_loan_path(@loan) %> |
+<%= link_to 'Back', loans_path %>

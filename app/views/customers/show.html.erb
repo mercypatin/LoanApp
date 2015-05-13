@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @customer.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @customer.last_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @customer.age %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @customer.phone %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @customer.notes %>
+</p>
+
+<p>
+  <strong>Loans count:</strong>
+  <%= @customer.loans_count %>
+</p>
+
+<p>
+  <strong>Payed loans count:</strong>
+  <%= @customer.payed_loans_count %>
+</p>
+
+<p>
+  <strong>Active loans count:</strong>
+  <%= @customer.active_loans_count %>
+</p>
+
+<p>
+  <strong>Total money borrowed:</strong>
+  <%= @customer.total_money_borrowed %>
+</p>
+
+<p>
+  <strong>Total money borrowed:</strong>
+  <%= @customer.total_money_borrowed %>
+</p>
+
+<p>
+  <strong>Delayed quotas count:</strong>
+  <%= @customer.delayed_quotas_count %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @customer.score %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
