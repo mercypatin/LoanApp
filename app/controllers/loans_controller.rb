@@ -10,6 +10,7 @@ class LoansController < ApplicationController
   # GET /loans/1
   # GET /loans/1.json
   def show
+    @loan = @customer.loans.find(params[:id])
   end
 
   # GET /loans/new
@@ -24,12 +25,12 @@ class LoansController < ApplicationController
   # POST /loans
   # POST /loans.json
   def create
-    @loan = Loan.new(loan_params)
+    @loan = @customer.Loans.new(params[:loans)
 
     respond_to do |format|
       if @loan.save
-        format.html { redirect_to @loan, notice: 'Loan was successfully created.' }
-        format.json { render :show, status: :created, location: @loan }
+        format.html { redirect_to [@customer, @loan], notice: 'Loan was successfully created.' }
+        format.json { render :show, json: [@customer, @loan], status: :created, location: [@customer, @loan] }
       else
         format.html { render :new }
         format.json { render json: @loan.errors, status: :unprocessable_entity }
