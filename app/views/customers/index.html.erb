@@ -26,7 +26,7 @@
         <td><%= customer.notes %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'New Loan', new_customer_loan_path(@customer) %></td>
+        <td><%= link_to 'New Loan', new_customer_loan_path(@customers) %></td>
         <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

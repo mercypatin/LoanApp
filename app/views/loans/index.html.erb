@@ -17,7 +17,7 @@
   <tbody>
     <% @loans.each do |loan| %>
       <tr>
-        <td><%= loan.customer %></td>
+        <td><%= loan.customer.first_name if loan.customer %></td>
         <td><%= loan.status %></td>
         <td><%= loan.amount %></td>
         <td><%= loan.currency %></td>
