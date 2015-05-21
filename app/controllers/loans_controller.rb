@@ -10,7 +10,7 @@ class LoansController < ApplicationController
   # GET /loans/1
   # GET /loans/1.json
   def show
-    @loan = @customer.loans.find(params[:id]) 
+    @loan = Loan.find(params[:id])
   end
 
   # GET /loans/new
@@ -25,7 +25,8 @@ class LoansController < ApplicationController
   # POST /loans
   # POST /loans.json
   def create
-    @loan = @customer.Loans.new(params[:loans])
+
+    @loan = Loan.new(loan_params)
 
     respond_to do |format|
       if @loan.save

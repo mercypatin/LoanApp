@@ -2,7 +2,7 @@
 
 <p>
   <strong>Customer:</strong>
-  <%= @loan.customer %>
+  <%= link_to @loan.customer.first_name, customer_path(@loan.customer) %>
 </p>
 
 <p>
