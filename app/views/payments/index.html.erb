@@ -18,7 +18,7 @@
   <tbody>
     <% @payments.each do |payment| %>
       <tr>
-        <td><%= payment.loan.customer.first_name if payment.loan.customer_id %></td>
+        <td><%= payment.loan.customer.first_name if payment.loan && payment.loan.customer  %></td>
         <td><%= payment.status %></td>
         <td><%= payment.amount %></td>
         <td><%= payment.estimated_date %></td>
